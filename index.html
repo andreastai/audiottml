@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta name="description" content="imsc-player-demo">
+    <meta charset="utf-8">
+    <title>imscJS demo</title>
+    <script src="https://unpkg.com/imsc@1.1.3/dist/imsc.all.min.js"></script>
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" href="data:;base64,=">
+  </head>
+
+  <body>
+    <div>
+      <div id="videoContainer">
+        <video src="audio/silence.mp3"
+               id="imscVideo"
+              muted loop controls width="800" height="600" style="background-color: black;">
+          <track src="ttml/subtitles.ttml"
+                 kind="subtitles"
+                 label="Expanded TTML Sample"
+                 srclang="en"/>
+        </video>
+      </div>
+      <div id="render-div"></div>
+    </div>
+   <script src="js/index.js"></script>
+  </body>
+
+</html>
